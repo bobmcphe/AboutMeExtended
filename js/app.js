@@ -88,9 +88,12 @@
 
 // alert('Thank you, ' + name 'for playing!');
 
+// A 6-attempt number guessing game.
 var myArray = [0,1,2,3,4,5,6,7,8,9,10];
 var num = myArray[4];
+var numOfGuesses = 0;
 
+  for(numOfGuesses = 0; numOfGuesses <=6; numOfGuesses++) {
 var guess = prompt('What number am I thinking of?')
 if(num === guess) {
   alert('good job!');
@@ -101,7 +104,7 @@ if(num === guess) {
 } else if(guess < num) {
   alert('Try a little higher.');
 }
-console.log(guess);
+console.log(guess);}
 
 // var userScore = 0;
 // var questions = [0,1,2,3,4,5,6,7,8,9,10];
