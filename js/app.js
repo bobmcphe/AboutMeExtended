@@ -88,23 +88,41 @@
 
 // alert('Thank you, ' + name 'for playing!');
 
-// A 6-attempt number guessing game.
+// A 4-attempt number guessing game.
 var myArray = [0,1,2,3,4,5,6,7,8,9,10];
 var num = myArray[4];
-var numOfGuesses = 0;
+var numOfGuesses = 1;
 
-  for(numOfGuesses = 0; numOfGuesses <=6; numOfGuesses++) {
-var guess = prompt('What number am I thinking of?')
-if(num === guess) {
-  alert('good job!');
+  for(numOfGuesses = 1; numOfGuesses <=4; numOfGuesses++) {
+    var guess = prompt('What number am I thinking of?');
+    if(num == guess) {
+      alert('good job!');
+      break;
+    } else if(guess > num) {
+      alert('Try a little lower.');
 
-} else if(guess > num) {
-  alert('Try a little lower.');
+    } else if(guess < num) {
+      alert('Try a little higher.');
+    }
+    console.log(guess);
+  }
 
-} else if(guess < num) {
-  alert('Try a little higher.');
-}
-console.log(guess);}
+// 6-attempt non-numeric guessing game
+
+var carArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus', 'Mitsubishi', 'GMC', 'Chevy'];
+var myCar = carArray[0];
+var carGuesses = 0;
+
+  for(carGuesses = 0; carGuesses <=6; carGuesses++) {
+    var carInput = prompt('What kind of car does Bobby own?');
+    if(carInput.toLowerCase === myCar.toLowerCase) {
+      alert('good job!');
+      break;
+    } else if { (carInput.toLowerCase ==! myCar.toLowerCase) {
+      alert('Try again.');
+    }
+    console.log(guess);
+  }
 
 // var userScore = 0;
 // var questions = [0,1,2,3,4,5,6,7,8,9,10];
