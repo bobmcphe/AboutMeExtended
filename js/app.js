@@ -82,7 +82,7 @@ if(play.toUpperCase() === 'YES' || play.toUpperCase() === 'Y'){
 
 //  console.log(siblings);
 
-var outdoors = prompt('Does Bobby love the outdoors')
+var outdoors = prompt('Does Bobby love the outdoors?')
 if(outdoors.toUpperCase() === 'YES' || play.toUpperCase() === 'Y'){
   alert('That is correct. Sadly, he has little time for it.');
   totalScore++;
@@ -95,7 +95,8 @@ alert('Thank you, ' + name + ' for playing! Just a few more quesitons.');
 
 // A 4-attempt number guessing game.
 var myArray = [0,1,2,3,4,5,6,7,8,9,10];
-var num = myArray[4];
+//var num = myArray[4];
+var num = Math.floor((Math.random() * 10) + 1); //taken from W3Schools
 var numOfGuesses = 1;
 
   for(numOfGuesses = 1; numOfGuesses <=4; numOfGuesses++) {
@@ -110,7 +111,7 @@ var numOfGuesses = 1;
     } else if(guess < num) {
       alert('Try a little higher.');
     }
-    console.log(guess);
+   // console.log(guess);
   }
 
 // 6-attempt non-numeric guessing game
@@ -120,7 +121,7 @@ var myCar = carArray[0, 2, 5];
 var carGuesses = 0;
 
   for(carGuesses = 1; carGuesses <=6; carGuesses++) {
-    var carInput = prompt('What kind of car has Bobby owned? Choose from Honda, Ford, Dodge, Jeep, Chrysler, Lexus');
+    var carInput = prompt('What kind of car has Bobby owned? Choose from Honda, Ford, Dodge, Jeep, Chrysler, Lexus.');
     
     if(carInput.toLowerCase() === myCar.toLowerCase()) {
       alert('good job!');
@@ -133,7 +134,7 @@ var carGuesses = 0;
     }
   }
 
-  alert('Your total score is ' + totalScore);
+  alert(name + ', your total score is ' + totalScore + '.');
 
 // var userScore = 0;
 // var questions = [0,1,2,3,4,5,6,7,8,9,10];
