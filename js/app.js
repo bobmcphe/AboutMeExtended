@@ -109,19 +109,22 @@ var numOfGuesses = 1;
 
 // 6-attempt non-numeric guessing game
 
-var carArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus', 'Mitsubishi', 'GMC', 'Chevy'];
+var carArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus'];
 var myCar = carArray[0];
 var carGuesses = 0;
 
-  for(carGuesses = 0; carGuesses <=6; carGuesses++) {
-    var carInput = prompt('What kind of car does Bobby own?');
-    if(carInput.toLowerCase === myCar.toLowerCase) {
+  for(carGuesses = 1; carGuesses <=6; carGuesses++) {
+    var carInput = prompt('What kind of car does Bobby own? Choose from Honda, Ford, Dodge, Jeep, Chrysler, Lexus');
+    
+    if(carInput.toLowerCase() === myCar.toLowerCase()) {
       alert('good job!');
+      // console.log(carInput);
       break;
-    } else if { (carInput.toLowerCase ==! myCar.toLowerCase) {
+    } else if(carInput.toLowerCase() !== myCar.toLowerCase()) {
       alert('Try again.');
+      console.log(carInput);
     }
-    console.log(guess);
+ 
   }
 
 // var userScore = 0;
