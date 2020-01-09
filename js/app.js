@@ -25,18 +25,24 @@ myFunction();
 */
 
 // Question series
+
+function Naming(){
 var totalScore = 0;
 var name = prompt('What is your name?');
 alert('Hello ' + name);
+}
 //  console.log(name);
+Naming()
 
-
+function play(){
 var play = prompt('This is a guessing game, to try to learn a little about the author, are you ready to play?')
 if(play.toUpperCase() === 'YES' || play.toUpperCase() ==='Y'){
   alert('Great!');
 } else {
   alert('Well, let\'s go ahead, I think you\'ll enjoy it.');
 }
+}
+play()
 //  console.log(play);
 
 
