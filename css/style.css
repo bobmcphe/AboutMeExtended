@@ -14,7 +14,10 @@ h1 {
     
     p {
         color: red;
+        margin-left: 100px;
+        margin-right: 100px;
     }
+
 
 h2 {
     text-align: center;
@@ -27,6 +30,7 @@ h2 {
 }
 
 .square {
+    width: 800px;
 margin: 0 auto;
 
 }
@@ -37,14 +41,23 @@ p {
     background-color: #E2EFDE;
     border-radius: 5px;
     font-weight: 800;
+    width: 800px;
+    margin: 0 auto;
 }
 
 div {
-    padding-left: 125px;
+    padding-left: 25px;
     padding-top: 25px;
-    padding-right: 125px;
+    padding-right: 25px;
     padding-bottom: 25px;
 
+}
+
+div #special {
+    background-color: #9B7E46;
+    padding: 5%;
+    margin: 0px;
+    border: 0px;
 }
 
 ul {
@@ -61,5 +74,7 @@ text-align: center;
 }
 
 article {
-    background-color:#AFD0BF;
+    background-color: #E2EFDE;
+    padding-bottom: 45px;
+    padding-top: 45px;
 }
