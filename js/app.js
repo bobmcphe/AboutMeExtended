@@ -46,7 +46,7 @@ play()
 //  console.log(play);
 
 
-
+function book(){
 var book = prompt('Do you think Bobby loves to read & collect books? As in over $3000 spent last year on them?');
 
 if(book.toUpperCase() === 'YES' || book.toUpperCase() === 'Y'){
@@ -55,9 +55,13 @@ if(book.toUpperCase() === 'YES' || book.toUpperCase() === 'Y'){
 } else {
   alert('Actually, believe it or not, he is pretty big into books.');
 }
+}
+
+book()
+
 //  console.log(book);
 
-
+function school(){
 var school = prompt('Does Bobby have more than 3 degrees?');
 
 if(school.toLowerCase() === 'no' || school.toLowerCase() === 'n'){
@@ -66,8 +70,12 @@ if(school.toLowerCase() === 'no' || school.toLowerCase() === 'n'){
 } else {
   alert('That would be pretty interesting, but I am afraid it is not the case.');
 }
+}
+school()
 //  console.log(school);
 
+
+function married(){
 var married = prompt('Do you think Bobby is married?');
 
 if(married.toLowerCase() === 'yes' || married.toLowerCase() === 'y' ){
@@ -76,31 +84,45 @@ if(married.toLowerCase() === 'yes' || married.toLowerCase() === 'y' ){
 } else{
   alert('He is married, in fact.');
 }
+}
+married()
 // console.log(married);
 
-var siblings = prompt('Do you think Bobby has any siblings?')
-if(play.toUpperCase() === 'YES' || play.toUpperCase() === 'Y'){
+function sibs(){
+var siblings = prompt('Do you think Bobby has any siblings?');
+
+if(siblings.toUpperCase() === 'YES' || siblings.toUpperCase() === 'Y'){
   alert('Indeed, that is correct');
   totalScore++;
 } else {
   alert('Actually, he does have a brother.');
 }
+}
+sibs()
 
 //  console.log(siblings);
+function outdoors(){
+var outdoors = prompt('Does Bobby love the outdoors?');
 
-var outdoors = prompt('Does Bobby love the outdoors?')
-if(outdoors.toUpperCase() === 'YES' || play.toUpperCase() === 'Y'){
+if(outdoors.toUpperCase() === 'YES' || outdoors.toUpperCase() === 'Y'){
   alert('That is correct. Sadly, he has little time for it.');
   totalScore++;
 } else {
   alert('Bobby is actually an avid outdoorsmans, but sadly has no time for it.');
 }
-//  console.log(outdoors);
+}
+outdoors()
 
+//  console.log(outdoors);
+function alert1(){
 alert('Thank you, ' + name + ' for playing! Just a few more quesitons.');
+}
+alert1()
 
 // A 4-attempt number guessing game.
-var myArray = [0,1,2,3,4,5,6,7,8,9,10];
+function Guessing1(){
+  
+  var myArray = [0,1,2,3,4,5,6,7,8,9,10];
 //var num = myArray[4];
 var num = Math.floor((Math.random() * 10) + 1); //taken from W3Schools
 var numOfGuesses = 1;
@@ -119,11 +141,13 @@ var numOfGuesses = 1;
     }
    // console.log(guess);
   }
-
+}
+Guessing1()
 // 6-attempt non-numeric guessing game
 
 // var possibleCarArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus'];
-var simpleArray = ['Honda', 'Dodge', 'Jeep'];
+function Guessing2(){
+  var simpleArray = ['Honda', 'Dodge', 'Jeep'];
 var myCars = simpleArray.includes(['Honda', 'Dodge', 'Jeep']);
 var carGuesses = 0;
 
@@ -145,6 +169,8 @@ var carGuesses = 0;
       console.log(carInput);
     }
   }
+}
+Guessing2()
 
   alert(name + ', your total score is ' + totalScore + '.');
 
