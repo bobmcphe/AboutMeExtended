@@ -116,24 +116,25 @@ var numOfGuesses = 1;
 
 // 6-attempt non-numeric guessing game
 
-var carArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus'];
-var myCar = carArray[0, 2, 5];
+// var possibleCarArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus'];
+var simpleArray = ['Honda', 'Dodge', 'Jeep'];
+var myCars = simpleArray.includes(['Honda', 'Dodge', 'Jeep']);
 var carGuesses = 0;
 
-// ex: if (correctAnswers.includes(UserInput)) { alert('yay');}
+// ex: if (correctAnswers.includes(UserInput)) { alert('yay');} .includes returns boolean, not string
 
   for(carGuesses = 1; carGuesses <=6; carGuesses++) {
     var carInput = prompt('What kind of car has Bobby owned? Choose from Honda, Ford, Dodge, Jeep, Chrysler, Lexus.');
     
    // if(carInput.toLowerCase() === myCar.toLowerCase())
     
-    if(myCar.toLowerCase().includes(carInput.toLowerCase())) {
+    if(myCars.toLowerCase() == carInput.toLowerCase()) { //myCars.toLowerCase() is not a function???
       alert('Good job!');
       totalScore++;
       // console.log(carInput);
       break;
 
-    } else if(carInput.toLowerCase() !== myCar.toLowerCase()) {
+    } else if(carInput.toLowerCase() !== myCars.toLowerCase()) {
       alert('Try again.');
       console.log(carInput);
     }
