@@ -2,4 +2,4 @@
 Owner of the code: Bobby (Navigator)
 Driver is Teddy.
 
-Worked on Bobby's index.HTML together 
+Worked on Bobby's app.js together 
