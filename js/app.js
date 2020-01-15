@@ -25,9 +25,9 @@ myFunction();
 */
 
 // Question series
-
-function Naming(){
 var totalScore = 0;
+function Naming(){
+
 var name = prompt('What is your name?');
 alert('Hello ' + name);
 }
@@ -42,7 +42,7 @@ if(play.toUpperCase() === 'YES' || play.toUpperCase() ==='Y'){
   alert('Well, let\'s go ahead, I think you\'ll enjoy it.');
 }
 }
-play()
+// play()
 //  console.log(play);
 
 
@@ -57,7 +57,7 @@ if(book.toUpperCase() === 'YES' || book.toUpperCase() === 'Y'){
 }
 }
 
-book()
+// book()
 
 //  console.log(book);
 
@@ -71,7 +71,7 @@ if(school.toLowerCase() === 'no' || school.toLowerCase() === 'n'){
   alert('That would be pretty interesting, but I am afraid it is not the case.');
 }
 }
-school()
+// school()
 //  console.log(school);
 
 
@@ -85,7 +85,7 @@ if(married.toLowerCase() === 'yes' || married.toLowerCase() === 'y' ){
   alert('He is married, in fact.');
 }
 }
-married()
+// married()
 // console.log(married);
 
 function sibs(){
@@ -98,7 +98,7 @@ if(siblings.toUpperCase() === 'YES' || siblings.toUpperCase() === 'Y'){
   alert('Actually, he does have a brother.');
 }
 }
-sibs()
+// sibs()
 
 //  console.log(siblings);
 function outdoors(){
@@ -111,7 +111,7 @@ if(outdoors.toUpperCase() === 'YES' || outdoors.toUpperCase() === 'Y'){
   alert('Bobby is actually an avid outdoorsmans, but sadly has no time for it.');
 }
 }
-outdoors()
+// outdoors()
 
 //  console.log(outdoors);
 function alert1(){
@@ -142,13 +142,15 @@ var numOfGuesses = 1;
    // console.log(guess);
   }
 }
-Guessing1()
+
+// Guessing1()
+
 // 6-attempt non-numeric guessing game
 
 // var possibleCarArray = ['Honda', 'Ford','Dodge', 'Chrysler', 'Toyota', 'Jeep', 'Lexus'];
-function Guessing2(){
+function Guessing2() {
   var simpleArray = ['Honda', 'Dodge', 'Jeep'];
-var myCars = simpleArray.includes(['Honda', 'Dodge', 'Jeep']);
+// var myCars = simpleArray.includes(['Honda', 'Dodge', 'Jeep']);
 var carGuesses = 0;
 
 // ex: if (correctAnswers.includes(UserInput)) { alert('yay');} .includes returns boolean, not string
@@ -156,35 +158,20 @@ var carGuesses = 0;
   for(carGuesses = 1; carGuesses <=6; carGuesses++) {
     var carInput = prompt('What kind of car has Bobby owned? Choose from Honda, Ford, Dodge, Jeep, Chrysler, Lexus.');
     
-   // if(carInput.toLowerCase() === myCar.toLowerCase())
-    
-    if(myCars.toLowerCase() == carInput.toLowerCase()) { //myCars.toLowerCase() is not a function???
+  //  // if(carInput.toLowerCase() === myCars.toLowerCase())
+
+    if (simpleArray.includes(carInput)) {
       alert('Good job!');
       totalScore++;
-      // console.log(carInput);
+       console.log(carInput);
       break;
-
-    } else if(carInput.toLowerCase() !== myCars.toLowerCase()) {
+    } else { 
       alert('Try again.');
-      console.log(carInput);
     }
   }
-}
+
 Guessing2()
 
   alert(name + ', your total score is ' + totalScore + '.');
 
-// var userScore = 0;
-// var questions = [0,1,2,3,4,5,6,7,8,9,10];
-// var answers = ['0', '1', '2', '3', '4'];
-// var response = '';
-
-// for (var i = 0; i < questions.length; i++) {
-//   response = prompt(questions[i]);
-//   if (response.toLocaleLowerCase === answers[i].toLowerCase) {
-//     alert('You are correct.');
-//     userScore++;
-//     console.log(userScore);
-//   } else {
-//     alert('That is incorrect');
-//   }
+}
