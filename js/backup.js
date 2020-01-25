@@ -131,6 +131,7 @@ var numOfGuesses = 1;
 function Guessing2() {
 
 var simpleArray = ['Honda', 'Dodge', 'Jeep'];
+var myCars = simpleArray.includes(['Honda', 'Dodge', 'Jeep']);
 var carGuesses = 0;
 
   for(carGuesses = 1; carGuesses <=6; carGuesses++) {
@@ -142,10 +143,12 @@ var carGuesses = 0;
       console.log(carInput + 'inside if statement');
       break;
 
-    } else  {
+    } else if(carInput.toLowerCase() !== myCars.toLowerCase()) {
       alert('Try again.');
       console.log(carInput + 'final');
       console.log(userScore);
+    } else {
+        alert('That is incorrect');
 
   }
 }

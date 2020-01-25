@@ -1,20 +1,27 @@
-background {
+/* background {
     color: #E2EFDE;
+} */
+
+body{
+    width: 960px;
+    margin: auto;
 }
 
+
 h1 {
-    color: whitesmoke;
     background-color: #9B7E46;
     width: 300px;
     margin: 0 auto;
     text-align: center;
     border-radius: 5px;
+    padding: 12px;
+    /* margin-top: 5px; */
 
     }
     
     p {
         color: red;
-        margin-left: 100px;
+       
         margin-right: 100px;
     }
 
@@ -26,9 +33,30 @@ h2 {
     width: 250px;
     margin: 0 auto;
     border-radius: 5px;
-
+    padding: 10px;
 }
 
+#TOC{
+    text-align: center;
+    text-shadow: silver;
+    background-color: #F4B266;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+
+h3 {
+    text-align: center;
+    text-shadow: silver;
+    background-color: #F4B266;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+}
 .square {
     width: 800px;
 margin: 0 auto;
@@ -41,7 +69,7 @@ p {
     background-color: #E2EFDE;
     border-radius: 5px;
     font-weight: 800;
-    width: 800px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -61,7 +89,7 @@ div #special {
 }
 
 ul {
-    padding-left: 555px;
+    padding-left: 55px;
     padding-top: 25px;
     padding-right: 125px;
     padding-bottom: 25px;
@@ -69,7 +97,8 @@ ul {
 }
 
 #exception {
-   
+   width: 400px;
+   margin: auto;
 text-align: center;
 }
 
@@ -77,4 +106,7 @@ article {
     background-color: #E2EFDE;
     padding-bottom: 45px;
     padding-top: 45px;
+    border-radius: 5px;
 }
+
+/* E2EFDE */
